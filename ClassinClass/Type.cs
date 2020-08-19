@@ -9,7 +9,7 @@ namespace ClassinClass
     public class Type : Warcraft
     {
         public string Tyype { get; set; }
-        public Type(string naam, string leeftijd,string tyype) : base(naam, leeftijd)
+        public Type(string naam, string level,string tyype) : base(naam, level)
         {
             Tyype = tyype;
         }

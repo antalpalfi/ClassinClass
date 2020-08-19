@@ -10,7 +10,7 @@ namespace ClassinClass
     {
         public string Bow { get; set; }
         //public List<string> bows = new List<string> { "ice crosbow", "fire crosbow", "icebow longbow","fire };
-        public Archer(string naam, string leeftijd, string tyype,string bow) : base(naam, leeftijd,tyype)
+        public Archer(string naam, string level, string tyype,string bow) : base(naam, level, tyype)
         {
             Bow = bow;
         }

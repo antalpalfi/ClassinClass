@@ -124,7 +124,7 @@ namespace ClassinClass
                 listBoxNaam.DataSource = heroes;
                 MessageBox.Show($"New hero\n" +
                $"Naam: {txtNaam.Text}\n" +
-               $"Age: {numericUpDown1.Value}\n" +
+               $"Level: {numericUpDown1.Value}\n" +
                $"Type: {rdbElf.Text}\n" +
                $"Specifiek: {txtSpec.Text}");
                 txtNaam.Clear();
@@ -147,13 +147,13 @@ namespace ClassinClass
                 listBoxNaam.DataSource = heroes;
                 MessageBox.Show($"New hero\n" +
                 $"Naam: {txtNaam.Text}\n" +
-                $"Age: {numericUpDown1.Value}\n" +
+                $"Level: {numericUpDown1.Value}\n" +
                 $"Type: {rdbHuman.Text}\n" +
                 $"Specifiek: {txtSpec.Text}");
                 txtNaam.Clear();
                 txtSpec.Clear();
                 numericUpDown1.Value = 0;
-                rdbElf.Checked = false;
+                rdbHuman.Checked = false;
                 rdbHero.Checked = false;
             }
             else if (txtNaam.Text != " " && numericUpDown1.Value != 0 && rdbOrcs.Checked && rdbHero.Checked)
@@ -170,13 +170,13 @@ namespace ClassinClass
                 listBoxNaam.DataSource = heroes;
                 MessageBox.Show($"New hero\n" +
                 $"Naam: {txtNaam.Text}\n" +
-                $"Age: {numericUpDown1.Value}\n" +
+                $"Level: {numericUpDown1.Value}\n" +
                 $"Type: {rdbOrcs.Text}\n" +
                 $"Specifiek: {txtSpec.Text}");
                 txtNaam.Clear();
                 txtSpec.Clear();
                 numericUpDown1.Value = 0;
-                rdbElf.Checked = false;
+                rdbOrcs.Checked = false;
                 rdbHero.Checked = false;
             }
             else if (txtNaam.Text != " " && numericUpDown1.Value != 0 && rdbUndead.Checked && rdbHero.Checked)
@@ -192,13 +192,13 @@ namespace ClassinClass
 
                 MessageBox.Show($"New hero\n" +
                     $"Naam: {txtNaam.Text}\n" +
-                    $"Age: {numericUpDown1.Value}\n" +
+                    $"Level: {numericUpDown1.Value}\n" +
                     $"Type: {rdbUndead.Text}\n" +
                     $"Specifiek: {txtSpec.Text}");
                 txtNaam.Clear();
                 txtSpec.Clear();
                 numericUpDown1.Value = 0;
-                rdbElf.Checked = false;
+                rdbUndead.Checked = false;
                 rdbHero.Checked = false;
             }
             else if (txtNaam.Text != " " && numericUpDown1.Value != 0 && rdbElf.Checked && rdbArcher.Checked)
@@ -215,7 +215,7 @@ namespace ClassinClass
                 listBoxNaam.DataSource = archers;
                 MessageBox.Show($"New archer\n" +
                    $"Naam: {txtNaam.Text}\n" +
-                   $"Age: {numericUpDown1.Value}\n" +
+                   $"Level: {numericUpDown1.Value}\n" +
                    $"Type: {rdbElf.Text}\n" +
                    $"Specifiek: {txtSpec.Text}");
                 txtNaam.Clear();
@@ -238,7 +238,7 @@ namespace ClassinClass
                 listBoxNaam.DataSource = archers;
                 MessageBox.Show($"New archer\n" +
                    $"Naam: {txtNaam.Text}\n" +
-                   $"Age: {numericUpDown1.Value}\n" +
+                   $"Level: {numericUpDown1.Value}\n" +
                    $"Type: {rdbHuman.Text}\n" +
                    $"Specifiek: {txtSpec.Text}");
                 txtNaam.Clear();
@@ -261,7 +261,7 @@ namespace ClassinClass
                 listBoxNaam.DataSource = archers;
                 MessageBox.Show($"New archer\n" +
                    $"Naam: {txtNaam.Text}\n" +
-                   $"Age: {numericUpDown1.Value}\n" +
+                   $"Level: {numericUpDown1.Value}\n" +
                    $"Type: {rdbOrcs.Text}\n" +
                    $"Specifiek: {txtSpec.Text}");
                 txtNaam.Clear();
@@ -284,7 +284,7 @@ namespace ClassinClass
                 listBoxNaam.DataSource = archers;
                 MessageBox.Show($"New archer\n" +
                    $"Naam: {txtNaam.Text}\n" +
-                   $"Age: {numericUpDown1.Value}\n" +
+                   $"Level: {numericUpDown1.Value}\n" +
                    $"Type: {rdbUndead.Text}\n" +
                    $"Specifiek: {txtSpec.Text}");
                 txtNaam.Clear();
@@ -307,7 +307,7 @@ namespace ClassinClass
                 listBoxNaam.DataSource = horsemen;
                 MessageBox.Show($"New horseman\n" +
                    $"Naam: {txtNaam.Text}\n" +
-                   $"Age: {numericUpDown1.Value}\n" +
+                   $"Level: {numericUpDown1.Value}\n" +
                    $"Type: {rdbUndead.Text}\n" +
                    $"Specifiek: {txtSpec.Text}");
                 txtNaam.Clear();
@@ -330,7 +330,7 @@ namespace ClassinClass
                 listBoxNaam.DataSource = horsemen;
                 MessageBox.Show($"New horseman\n" +
                    $"Naam: {txtNaam.Text}\n" +
-                   $"Age: {numericUpDown1.Value}\n" +
+                   $"Level: {numericUpDown1.Value}\n" +
                    $"Type: {rdbOrcs.Text}\n" +
                    $"Specifiek: {txtSpec.Text}");
                 txtNaam.Clear();
@@ -353,7 +353,7 @@ namespace ClassinClass
                 listBoxNaam.DataSource = horsemen;
                 MessageBox.Show($"New horseman\n" +
                    $"Naam: {txtNaam.Text}\n" +
-                   $"Age: {numericUpDown1.Value}\n" +
+                   $"Level: {numericUpDown1.Value}\n" +
                    $"Type: {rdbElf.Text}\n" +
                    $"Specifiek: {txtSpec.Text}");
                 txtNaam.Clear();
@@ -376,7 +376,7 @@ namespace ClassinClass
                 listBoxNaam.DataSource = horsemen;
                 MessageBox.Show($"New horseman\n" +
                    $"Naam: {txtNaam.Text}\n" +
-                   $"Age: {numericUpDown1.Value}\n" +
+                   $"Level: {numericUpDown1.Value}\n" +
                    $"Type: {rdbHuman.Text}\n" +
                    $"Specifiek: {txtSpec.Text}");
                 txtNaam.Clear();

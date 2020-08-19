@@ -12,7 +12,7 @@ namespace ClassinClass
         public string SuperPower { get; set; }
 
 
-        public Heroes(string naam, string leeftijd, string tyype,string superpower) :base(naam , leeftijd,tyype)
+        public Heroes(string naam, string level, string tyype,string superpower) :base(naam , level, tyype)
         {
             SuperPower = superpower;
 

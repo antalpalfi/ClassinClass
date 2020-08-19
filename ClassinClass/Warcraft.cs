@@ -9,17 +9,17 @@ namespace ClassinClass
     public class Warcraft
     {
         public string Naam { get; set; }
-        public string Leeftijd { get; set; }
+        public string Level{ get; set; }
        
-        public Warcraft(string naam, string leeftijd)
+        public Warcraft(string naam, string level)
         {
             Naam = naam;
-            Leeftijd = leeftijd;
+            Level = level;
            
         }
         public virtual string Beschrijft()
         {
-            return $"Wiens naam is {Naam}. Diens leeftijd is {Leeftijd}.";
+            return $"Wiens naam is {Naam}. Diens level is {Level}.";
         }
         public override string ToString()
         {
